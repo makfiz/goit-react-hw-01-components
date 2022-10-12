@@ -7,12 +7,12 @@ import data from "../json/data.json"
 import friends from "../json/friends.json"
 import transactions from "../json/transactions.json"
 import { Box } from "components/utils/Box";
-import { padding } from "styled-system";
+
 
 export const App = () => {
   return (
     <>
-      <Box bg={'#e7ecf2'} padding={'50px'}>
+      <Box bg={'#e7ecf2'}>
         <Profile username={user.username}
         tag={user.tag}
         location={user.location}
