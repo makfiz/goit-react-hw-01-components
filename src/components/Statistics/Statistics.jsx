@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 
-import {  Title, Stat_list, Stat_item, Label, Percentage } from 'components/Statistics/Statistics.styled'
+import {  Title, StatList, StatItem, Label, Percentage } from 'components/Statistics/Statistics.styled'
 import { Box } from "components/utils/Box";
 import { getRandomColor } from './RandomColor'
 
@@ -19,14 +19,14 @@ export const Statistics = ({ stats, title }) => {
     
       {title && (<Title >Upload stats</Title>)}      
 
-      <Stat_list>
+      <StatList>
           {stats.map(each => (
-              <Stat_item key={each.id} style={{backgroundColor:getRandomColor()}}>
+              <StatItem key={each.id} style={{backgroundColor:getRandomColor()}}>
               <Label >{each.label}</Label>
               <Percentage >{each.percentage}%</Percentage>
-              </Stat_item>
+              </StatItem>
           ))}
-      </Stat_list>
+      </StatList>
     
   </Box>
 }

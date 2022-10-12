@@ -6,7 +6,7 @@ export const Title = styled.h2`
   margin:0px;
 margin-bottom: 30px;
 `;
-export const Stat_list = styled.ul`
+export const StatList = styled.ul`
   display: flex;
   list-style: none;
   justify-content: center;
@@ -15,7 +15,7 @@ export const Stat_list = styled.ul`
   border: #515557 1px solid;
 `;
 
-export const Stat_item = styled.li`
+export const StatItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
