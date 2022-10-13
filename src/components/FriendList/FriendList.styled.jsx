@@ -1,6 +1,5 @@
 import styled from 'styled-components'
-
-export const FriendItem = styled.li`
+export const Item = styled.li`
     display:flex;
     padding-left: 10px;
     margin: 10px 0px;

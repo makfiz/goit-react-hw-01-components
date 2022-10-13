@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
-import { BsFillCircleFill } from 'react-icons/bs';
 import { Box } from "components/utils/Box";
-import {FriendItem, FriendStatus, FriendAvatar, FriendName} from 'components/FriendList/FriendList.styled'
+import {Item} from 'components/FriendList/FriendList.styled'
+import {FriendListItem} from 'components/FriendList/FriendListItem'
 
 export const FriendList = ({friends}) => {
     return <Box
@@ -12,11 +12,10 @@ export const FriendList = ({friends}) => {
         bg="white"
         borderRadius="normal"
         as="ul">
-        {friends.map(friend => <FriendItem key={friend.id}>
-            <FriendStatus ><BsFillCircleFill style={{ color: friend.isOnline ? "green" : 'red'}}/></FriendStatus>
-            <FriendAvatar  src={friend.avatar} alt="User avatar" width="48" />
-            <FriendName >{ friend.name}</FriendName>
-        </FriendItem>)}
+        {friends.map(friend =>
+            <Item key={friend.id}>
+                <FriendListItem  isOnline={friend.isOnline} avatar={friend.avatar} name={friend.name} />
+            </Item>)}
     </Box>
 }
 
