@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { BsFillCircleFill } from 'react-icons/bs';
-import {FriendStatus, FriendAvatar, FriendName} from 'components/FriendList/FriendList.styled'
+import {FriendStatus, FriendAvatar, FriendName} from 'components/FriendList/FriendListItem.styled'
 
 
 export const FriendListItem = ({ isOnline, avatar, name }) => {
